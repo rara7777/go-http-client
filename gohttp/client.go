@@ -24,7 +24,7 @@ type Client interface {
 }
 
 func (c *httpClient) Get(url string, body interface{}, headers ...http.Header) (*core.Response, error) {
-	return c.do(http.MethodGet, url, getHeaders(headers...), nil)
+	return c.do(http.MethodGet, url, getHeaders(headers...), body)
 }
 
 func (c *httpClient) Post(url string, body interface{}, headers ...http.Header) (*core.Response, error) {
