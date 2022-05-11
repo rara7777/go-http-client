@@ -3,9 +3,10 @@ package examples
 import (
 	"errors"
 	"fmt"
-	"github.com/rara7777/go-http-client/gohttp_mock"
 	"net/http"
 	"testing"
+
+	"github.com/rara7777/go-http-client/gohttp_mock"
 )
 
 func TestCreateRepo(t *testing.T) {
